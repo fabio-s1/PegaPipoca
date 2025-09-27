@@ -26,6 +26,9 @@ jobs:
         run: |
           echo "const API_KEY = '${{ secrets.TMDB_API_KEY }}';" > config.js
 
+      - name: List files in the directory
+        run: ls -la
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
