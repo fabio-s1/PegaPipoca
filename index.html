@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PegaPipoca - Encontre seu filme</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Arquivos JavaScript -->
+    <script src="config.js" defer></script>
+    <script src="script.js" defer></script>
+
+    <style>
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-900 text-slate-200 font-sans">
+
+    <div class="container mx-auto px-4 py-8 flex flex-col min-h-screen">
+
+        <!-- Cabeçalho e Título -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl lg:text-5xl font-bold text-transparent bg-gradient-to-r from-green-400 via-orange-500 to-sky-500 gradient-text pb-2">
+                PegaPipoca
+            </h1>
+            <p class="text-slate-400 mt-2">Qual filme, série ou ator você quer pesquisar hoje?</p>
+        </header>
+
+        <main class="flex-grow flex flex-col justify-start">
+            <!-- Área de Busca -->
+            <section class="search-container max-w-2xl w-full mx-auto my-auto">
+                <div class="flex items-center gap-2 bg-slate-800 p-2 rounded-full shadow-lg border-2 border-slate-700">
+                    <input 
+                        type="text" 
+                        id="search-input" 
+                        placeholder="Ex: Interestelar, The Office, Tom Hanks..."
+                        class="w-full bg-transparent text-lg text-white placeholder-slate-500 px-4 py-2 focus:outline-none"
+                    >
+                    <button 
+                        id="search-button" 
+                        class="bg-green-500 hover:bg-green-600 text-slate-900 font-bold p-3 rounded-full transition-all duration-300 transform hover:scale-110"
+                        aria-label="Buscar"
+                    >
+                        <!-- Ícone de Lupa (SVG) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Container dos Resultados -->
+            <section id="results-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 mt-12">
+                <!-- Os resultados da busca aparecerão aqui -->
+                <p id="initial-message" class="text-slate-500 text-center col-span-full hidden">Pesquise por um filme para ver os resultados aqui.</p>
+            </section>
+        </main>
+        
+        <footer class="text-center mt-16 text-slate-500">
+            <p>&copy; 2025 PegaPipoca.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
