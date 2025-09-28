@@ -2,7 +2,8 @@
 
 
 
-### Uma aplicação web. O objetivo é criar um buscador de filmes simples e funcional, permitindo aos usuários pesquisar por títulos e visualizar informações relevantes, como pôster, ano de lançamento e avaliação.
+### Uma aplicação web.
+Um buscador de filmes simples e funcional, permitindo aos usuários pesquisar por títulos e visualizar informações relevantes, como pôster, ano de lançamento e avaliação.
 
 O projeto demonstra habilidades de desenvolvimento front-end, incluindo manipulação do DOM e o consumo de APIs externas, utilizando HTML5, Tailwind CSS e JavaScript (Vanilla JS).
 
